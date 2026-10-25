@@ -563,7 +563,8 @@ const EXPECTATIONS: Expectation[] = [
   { query: 'newWindow', title: 'newWindow', maxRank: 1 },
   { query: 'appium setup', path: '/docs/appium.md', maxRank: 1 },
   { query: 'appium service configuration', path: '/docs/appium-service.md', maxRank: 1 },
-  { query: 'appium capabilities', path: '/docs/api/appium.md', maxRank: 1 },
+  // The live Capabilities page outranks it since 2026-10-21; both pages answer the query.
+  { query: 'appium capabilities', path: '/docs/api/appium.md', maxRank: 2 },
   { query: 'appium capabilities', path: '/docs/capabilities.md', maxRank: 3 },
   { query: 'custom reporter', path: '/docs/customreporter.md', maxRank: 1 },
   { query: 'mcp transport', path: '/docs/mcp/transport.md', maxRank: 1 },
