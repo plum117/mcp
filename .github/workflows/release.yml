@@ -45,6 +45,8 @@ jobs:
         with:
           cache: 'pnpm'
           node-version-file: .nvmrc
+          # the runner cache can hold a 24.x below the engines floor
+          check-latest: true
           registry-url: 'https://registry.npmjs.org'
 
       - name: Setup Git
